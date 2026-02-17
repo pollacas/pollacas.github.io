@@ -1,0 +1,146 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+/* Grid de tarjetas en index */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    padding: 1rem 0.8rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e1e2f;
+    text-decoration: none;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 30px 40px -10px black;
+    border-color: gold;
+}
+
+/* Estilos para las páginas individuales */
+.profile-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 3rem;
+    padding: 1.8rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid gold;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.skills-section {
+    margin: 2rem 0 2.5rem;
+}
+
+.skills-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: gold;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0.75rem 0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-volver {
+    display: inline-block;
+    background: gold;
+    color: #1e1e2f;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    border: 2px solid white;
+    transition: 0.2s;
+    box-shadow: 0 10px 15px -5px black;
+}
+
+.btn-volver:hover {
+    background: white;
+    color: black;
+    border-color: gold;
+    transform: scale(1.03);
+}
